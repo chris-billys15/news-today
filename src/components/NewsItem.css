@@ -1,0 +1,32 @@
+.row-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.col-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsitem-container {
+  flex: 0 0 50%;
+  height: auto;
+  max-width: 340px;
+  margin-top: 20px;
+}
+
+.publisher-text {
+  color: #9f9f9f;
+  font-size: small;
+}
+
+.articletitle-text {
+  font-size: medium;
+}
+.newsitem-image {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+}
