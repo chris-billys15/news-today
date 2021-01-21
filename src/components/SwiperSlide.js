@@ -25,7 +25,10 @@ const SwiperSlideComponent = (props) => {
   const renderPrimaryCarousel = () => {
     var slides = [];
     for (let i = 0; i < articles.length; i++) {
-      if (articles[i].thumbnail !== undefined) {
+      if (
+        articles[i].thumbnail !== undefined &&
+        articles[i].title !== undefined
+      ) {
         slides.push(
           <SwiperSlide key={articles[i].id}>
             <img

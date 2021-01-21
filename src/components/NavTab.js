@@ -80,11 +80,13 @@ class NavTab extends React.Component {
                     key={category.id}
                   >
                     <SwiperSlideComponent articles={carouselData} />
-                    {Object.entries(sortedData).map((item) => {
+                    {Object.entries(sortedData).map((item, i) => {
                       if (item[1].length === 0) {
                         return <></>;
                       } else {
-                        return <NewsGrid title={item[0]} data={item[1]} />;
+                        return (
+                          <NewsGrid key={i} title={item[0]} data={item[1]} />
+                        );
                       }
                     })}
                   </TabPane>

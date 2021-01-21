@@ -21,7 +21,10 @@ export default class NewsGrid extends React.Component {
 
         <div className="grid-container">
           {this.state.data.map((article, i) => {
-            if (article.thumbnail !== undefined) {
+            if (
+              article.thumbnail !== undefined &&
+              article.title !== undefined
+            ) {
               return (
                 <NewsItem
                   key={article.thumbnail.hash}

@@ -3,7 +3,6 @@ import "./App.css";
 import { connect } from "react-redux";
 import { RequestNews } from "./api/linetoday";
 import NavigationBar from "./components/NavigationBar";
-import { SwiperSlideComponent } from "./components/SwiperSlide";
 import { SET_CONTENT_DATA, REMOVE_CONTENT_DATA } from "./redux/actionTypes";
 
 class App extends React.Component {
