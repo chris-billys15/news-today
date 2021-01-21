@@ -13,6 +13,7 @@
   height: auto;
   max-width: 340px;
   margin-top: 20px;
+  padding: 0px 10px;
 }
 
 .publisher-text {
@@ -27,6 +28,17 @@
   margin: 0;
   padding: 0;
   width: 100%;
+  max-width: 330px;
+  max-height: 191px;
   height: 100%;
+  border-radius: 3px;
+}
+
+.background-image {
+  object-fit: cover;
+  overflow: hidden;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
   border-radius: 3px;
 }
